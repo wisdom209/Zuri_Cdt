@@ -8,6 +8,9 @@ pointB = (53.474, -2.2388)
 # create an instance of the class with the points
 calculator_instance = CalculateBestWay(pointA, pointB)
 
+# set the speed of the machine
+calculator_instance.speed = 0.00267
+
 # store the result of the function that checks for obstructions
 result = calculator_instance.check_for_obstructions()
 

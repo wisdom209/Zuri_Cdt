@@ -13,8 +13,19 @@ class CalculateBestWay():
         self.__pointA = pointA
         self.__pointB = pointB
         self.__distance = self.__calculate_distance()
-        self.__speed = self.__distance / self.__SPEED_CONSTANT
-        self.__expected_time = self.__distance / self.__speed
+        self.__speed = None
+        self.__expected_time = None
+
+    @property
+    def speed(speed):
+        """getter for speed"""
+        return speed
+
+    @speed.setter
+    def speed(self, value):
+        """setter for speed"""
+        self.__speed = value
+
 
     def __calculate_distance(self) -> float:
         """calculate distance"""
@@ -31,15 +42,20 @@ class CalculateBestWay():
 
     def check_for_obstructions(self) -> str:
         """checks if machine encounters an obstruction"""
+        if self.__speed is None:
+            return "Speed of the machine must be supplied"
+
+        self.__expected_time = self.__distance / self.__speed   # get the expected time
         time_taken = (random() * (self.__expected_time + 180))  # simulate time taken
+
 
         if (time_taken > self.__expected_time + self.__obstruction_time_limit):
             return f"""
                     [*] There is an impenetrable obstruction
-                    
+
                     pointA = {self.__pointA}
                     pointb = {self.__pointB}
-                    
+
                     it should take {round(self.__expected_time, 1)}mins to go from
                     pointA to pointB but it took {round(time_taken,1)}mins which is 
                     {round(self.__obstruction_time_limit, 1)}mins more than the expected time.
@@ -51,7 +67,7 @@ class CalculateBestWay():
 
                     pointA = {self.__pointA}
                     pointb = {self.__pointB}
-                    
+
                     it should take {round(self.__expected_time, 1)}mins to go from
                     pointA to pointB but it took {round(time_taken, 1)}mins
                     """
@@ -61,7 +77,7 @@ class CalculateBestWay():
 
                 pointA = {self.__pointA}
                 pointb = {self.__pointB}
-                    
+
                 it should take {round(self.__expected_time, 1)}mins to go from
                 pointA to pointB but it took {round(time_taken,1)}mins.
                 """
