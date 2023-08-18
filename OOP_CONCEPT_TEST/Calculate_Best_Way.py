@@ -57,13 +57,13 @@ class CalculateBestWay():
 
         if (time_taken > self.__expected_time + self.__obstruction_time_limit):
             return f"""
-                [*] There is an obstruction
-                [*] The obstruction is impenetrable
+                    [*] There is an obstruction
+                    [*] The obstruction is impenetrable
 
-                it should take {round(self.__expected_time, 1)}mins to go from
-                pointA to pointB but it took {round(time_taken,1)}mins which is 
-                {round(self.__obstruction_time_limit, 1)}mins more than the expected time.
-                """
+                    it should take {round(self.__expected_time, 1)}mins to go from
+                    pointA to pointB but it took {round(time_taken,1)}mins which is 
+                    {round(self.__obstruction_time_limit, 1)}mins more than the expected time.
+                  """
 
         if (time_taken > self.__expected_time):
             return f"""
@@ -74,8 +74,8 @@ class CalculateBestWay():
                     """
 
         return f"""
-                [*] There is no obstruction
+                    [*] There is no obstruction
 
-                it should take {round(self.__expected_time, 1)}mins to go from
-                pointA to pointB but it took {round(time_taken,1)}mins.
+                    it should take {round(self.__expected_time, 1)}mins to go from
+                    pointA to pointB but it took {round(time_taken,1)}mins.
                 """
