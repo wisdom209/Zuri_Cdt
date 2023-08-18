@@ -28,9 +28,6 @@ The class provides the following methods:
 ```
                     [*] There is an impenetrable obstruction
 
-                    pointA = (53.5872, -2.4138)
-                    pointb = (53.474, -2.2388)
-
                     it should take 78.0mins to go from
                     pointA to pointB but it took 164.1mins which is 
                     60mins more than the expected time.

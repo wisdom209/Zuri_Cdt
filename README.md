@@ -1,1 +1,1 @@
-# Backend Tasks for the Zuri Continuous Development Traning
+# Backend Tasks for the Zuri Continuous Development Training

@@ -19,7 +19,7 @@ class CalculateBestWay():
     @property
     def speed(speed):
         """getter for speed"""
-        return speed
+        raise AttributeError("Speed should not be accessed outside of the class")
 
     @speed.setter
     def speed(self, value):
