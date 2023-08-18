@@ -21,15 +21,16 @@ The `CalculateBestWay` class is designed to handle the detection of obstructions
 
 The class provides the following methods:
 
-- `calculate_distance()`: Calculates the distance between two points. A private function not accessible outside the class where it is defined
+- `calculate_distance`: Calculates the distance between two points. A private function not accessible outside the class where it is defined
 
--  `check_for_obstructions()`: Checks for obstructions based on the provided machine speed, distance, and expected time and prints out the result in this format:
+-  `check_for_obstructions`: Checks for obstructions based on the provided machine speed, distance, and expected time and prints out the result in this format:
 
 ```
-                    [*] There is an impenetrable obstruction
+                    [*] There is an obstruction
+                    [*] The obstruction is impenetrable
 
                     it should take 78.0mins to go from
-                    pointA to pointB but it took 164.1mins which is 
+                    pointA to pointB but it took 164.1mins which is
                     60mins more than the expected time.
 ```
 Based on the text above, the module calculates the expected time to travel from point A to point B as 78 minutes. Since this expected time is significantly less than the time taken which is 164.1mins and because this time is 60 minutes more than the expected time, it indicates that there is an obstruction and it is considered impenetrable.
