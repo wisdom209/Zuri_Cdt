@@ -33,7 +33,7 @@ class Palindromes:
         str_with_palindromes = ""
 
         for index, str_to_check in enumerate(strings_to_check):
-            # add string to str_with_palindromes if a palindrome
+            # add str_to_check to str_with_palindromes if a palindrome
             if self.__is_palindrome(str_to_check):
                 if index == 0:
                     str_with_palindromes += str_to_check
