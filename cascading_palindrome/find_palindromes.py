@@ -6,7 +6,6 @@ class Palindromes:
 
     def __init__(self, *args, **kwargs):
         """Initialize the class with no arguments regardless of user input"""
-        # Program will not crash if user initializes class with an argument
         pass
 
     def __is_palindrome(self, check_str):
