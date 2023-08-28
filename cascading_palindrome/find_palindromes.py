@@ -28,9 +28,9 @@ class Palindromes:
     def find_palindromes_in_str(self, *args, **kwargs):
         """Checks for the palindromes in the given string"""
         if type(self.__inputString) is not str:
-            return f"MESSAGE: find_palindromes_in_str() takes a string but {type(self.__inputString)} was given"
+            return f"find_palindromes_in_str() takes a string but {type(self.__inputString)} was given"
         if len(self.__inputString.strip()) == 0:
-            return f"MESSAGE: An empty string has no palindromes"
+            return f"An empty string has no palindromes"
 
         strings_to_check = self.__inputString.split()
         str_with_palindromes = ""
