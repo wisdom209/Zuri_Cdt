@@ -6,7 +6,6 @@ class Palindromes:
 
     def __init__(self, *args, **kwargs):
         """Initialize the class with no arguments"""
-        pass
 
     def __is_palindrome(self, check_str):
         """returns true if a string is a palindrome otherwise false"""
