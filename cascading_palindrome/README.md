@@ -4,7 +4,7 @@
 - For example, if a string such as `'1230321 01234 0124210'` is used to initialize the class, it will return `1230321 0124210`.
 - if no palindromes are found in the string such as `'apple b banana cherry'`, it will return `'No palindromes in the given string: apple b banana cherry'`
 - Single letters or empty strings are not considered as palindromes.
-- if no argument is used to initialize the classs or given argument is not a string it will return `'Error: find_palindromes_in_str() takes a string argument'`
+- if no argument is used to initialize the classs or given argument is not a string it will return an error message
 
 ## Requirement
 - Python 3.6 or higher
