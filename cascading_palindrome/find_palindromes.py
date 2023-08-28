@@ -5,7 +5,7 @@ class Palindromes:
     """A class that finds the palindromes in a string"""
 
     def __init__(self, *args, **kwargs):
-        """Initialize the class with no arguments regardless of user input"""
+        """Initialize the class with no arguments"""
         pass
 
     def __is_palindrome(self, check_str):
