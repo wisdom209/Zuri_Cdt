@@ -60,8 +60,8 @@ Before you start using this API, make sure you have the following installed:
 
     ```json
     {
-      "username": "YourUsername",
-      "password": "YourPassword"
+      "username": "Gold123",
+      "password": "password123"
     }
     ```
 
