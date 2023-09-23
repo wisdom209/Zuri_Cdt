@@ -11,6 +11,8 @@ Before you start using this API, make sure you have the following installed:
 ## Getting Started
  
 - **Remote url for testing:** https://zuri-cdt-git-main-wisdom209.vercel.app
+- **username for testing api:** Gold123
+- **password for testing:** password123
 ## Endpoints
 
 ### 1. User Login
