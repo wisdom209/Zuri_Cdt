@@ -34,10 +34,14 @@ Before you start using this API, make sure you have the following installed:
 
     ```json
     {
-      "token": "your-jwt-token",
-      "username": "Gold123",
-      "password": "password123"
+    "message": "Success",
+    "status": 200,
+    "data": {
+        "token": "some-token",
+        "username": "Gold123",
+        "password": "password123"
     }
+   }
     ```
 
   - `400 Bad Request` if any required fields are missing or if the credentials are invalid.
@@ -59,10 +63,14 @@ Before you start using this API, make sure you have the following installed:
   - `200 OK` on successful authentication with a JSON response containing user details:
 
     ```json
-    {
-      "username": "Gold123",
-      "password": "password123"
+   {
+    "message": "Success",
+    "status": 200,
+    "data": {
+        "username": "Gold123",
+        "password": "password123"
     }
+   }
     ```
 
   - `401 Unauthorized` if the `Authorization` header is missing, the token is invalid, or the credentials do not match.
