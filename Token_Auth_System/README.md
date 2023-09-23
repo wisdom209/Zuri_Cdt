@@ -10,7 +10,7 @@ Before you start using this API, make sure you have the following installed:
 
 ## Getting Started
  
-
+- **Remote url for testing:** https://zuri-cdt-git-main-wisdom209.vercel.app
 ## Endpoints
 
 ### 1. User Login
@@ -33,8 +33,8 @@ Before you start using this API, make sure you have the following installed:
     ```json
     {
       "token": "your-jwt-token",
-      "username": "YourUsername",
-      "password": "YourPassword"
+      "username": "Gold123",
+      "password": "password123"
     }
     ```
 
